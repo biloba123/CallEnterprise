@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="0dp"
+                                    app:cardElevation="1dp"
+                                    android:layout_marginBottom="@dimen/small_spacing">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:padding="@dimen/sub_medium_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <frame.view.CircleTextView
+            android:id="@+id/ctv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:radius="26dp"
+            app:textSize="@dimen/sub_medium_text"
+            app:text="客户回访"/>
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/medium_text"
+            android:layout_toRightOf="@id/ctv_name"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            tools:text="18696162662"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="待审核"
+            android:textSize="@dimen/small_text"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/accent_white"
+            tools:background="@drawable/bg_task_uncheck"/>
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_voice"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_state"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@id/iv_voice"
+            android:layout_toRightOf="@id/ctv_name"
+            android:layout_below="@id/tv_tel"
+            android:gravity="bottom"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/s_small_spacing">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/sub_medium_text"
+                android:text="备注: "/>
+            <TextView
+                android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sub_medium_text"
+                tools:text="【Android】Fragment真正意义上的onResume和onPause - 农民伯伯 ..."/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

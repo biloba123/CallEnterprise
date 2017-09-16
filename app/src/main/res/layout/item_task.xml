@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="0dp"
+                                    app:cardElevation="1dp"
+                                    android:layout_marginBottom="@dimen/small_spacing">
+
+<RelativeLayout
+                android:orientation="vertical"
+                android:padding="@dimen/sub_medium_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <frame.view.CircleTextView
+        android:id="@+id/ctv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:radius="32dp"
+        app:textSize="@dimen/sub_medium_text"
+        app:text="客户回访"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/medium_text"
+        android:layout_toRightOf="@id/ctv_type"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        tools:text="关于近期客服回访"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/ctv_type"
+        android:layout_below="@id/tv_name"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginTop="@dimen/s_small_spacing">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sub_text_color"
+            android:textSize="@dimen/small_text"
+            android:text="总数: "/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent_blue"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold"
+            tools:text="16"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sub_medium_spacing"
+        android:textColor="@color/sub_text_color"
+        android:textSize="@dimen/small_text"
+        android:text="单价: "/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent_orange"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold"
+            tools:text="0.30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sub_medium_spacing"
+            android:textColor="@color/sub_text_color"
+            android:textSize="@dimen/small_text"
+            android:text="已完成: "/>
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent_green"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold"
+            tools:text="0"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_toRightOf="@id/ctv_type"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginTop="@dimen/small_spacing"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="6dp"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="待审核"
+        android:textSize="@dimen/small_text"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/accent_white"
+        tools:background="@drawable/bg_task_uncheck"/>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

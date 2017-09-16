@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_task">
+        <item>问卷调查</item>
+        <item>通知邀请</item>
+        <item>客户回访</item>
+        <item>数据清洗</item>
+        <item>电话销售</item>
+        <item>其他</item>
+    </string-array>
+</resources>

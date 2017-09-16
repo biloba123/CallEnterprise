@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#393d49</color>
+    <color name="colorPrimaryDark">#393d49</color>
+    <color name="colorAccent">#009688</color>
+    <color name="accent_tv">#1aa094</color>
+    <color name="bg_win">#f2f4f7</color>
+
+    <color name="icon">#abb4bf</color>
+
+</resources>

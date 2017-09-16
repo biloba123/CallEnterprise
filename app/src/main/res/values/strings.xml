@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">云呼叫企业端</string>
+    <string name="login">登录</string>
+    <string name="register_soon">立即注册</string>
+    <string name="register">注册</string>
+    <string name="title_task">任务</string>
+    <string name="title_call">呼叫</string>
+    <string name="title_user">账号</string>
+    <string name="account_info">账号信息</string>
+    <string name="wallet">钱包</string>
+    <string name="wallet_info">充值/提现</string>
+    <string name="service">服务中心</string>
+    <string name="service_info">获取帮助</string>
+    <string name="message">消息通知</string>
+    <string name="feedback">用户反馈</string>
+    <string name="share_firend">推荐给朋友</string>
+    <string name="count">支付结算</string>
+    <string name="task_list">任务列表</string>
+    <string name="post_task">发布任务</string>
+    <string name="check">检查网络连接</string>
+    <string name="load_error">加载出错，请稍后重试</string>
+    <string name="logining">登录中...</string>
+    <string name="login_succ">登陆成功</string>
+    <string name="wrong_data">输入信息有误</string>
+    <string name="uploading">上传中...</string>
+    <string name="post_task_succ">发布任务成功</string>
+    <string name="post_task_fail">发布任务失败</string>
+    <string name="paying">付款中...</string>
+    <string name="repay_succ">预付款成功</string>
+    <string name="repay_fail">预付款失败</string>
+    <string name="go_to_pay_end">请到 账号->支付结算 付尾款</string>
+    <string name="balance_not_enough">余额不足</string>
+    <string name="final_pay_succ">尾款支付成功</string>
+    <string name="final_pay_fail">尾款支付成功</string>
+    <string name="charge">充值</string>
+    <string name="charge_succ">充值成功</string>
+    <string name="charge_fail">充值失败</string>
+    <string name="charge_hint"><![CDATA[输入充值金额（100<=金额<=5000）]]></string>
+    <string name="serarch_call">呼叫查询</string>
+    <string name="express_succ">加急成功</string>
+    <string name="express_fail">加急失败</string>
+    <string name="recall_succ">重拨成功</string>
+    <string name="recall_fail">重拨失败</string>
+    <string name="upload_succ">上传成功</string>
+    <string name="exit">退出</string>
+</resources>
